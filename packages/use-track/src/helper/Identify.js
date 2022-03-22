@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { AnalyticsBrowser } from "@segment/analytics-next";
 
-const useTrack = () => {
+const useIdentify = () => {
   const [analytics, setAnalytics] = useState();
   const [writeKey, setWriteKey] = useState("2qexT5tmXGmTbVw0Rs75hLnPueW7GEB6");
 
@@ -13,7 +13,7 @@ const useTrack = () => {
     loadAnalytics();
   }, [writeKey]);
 
-  return analytics?.track;
+  return analytics?.identify;
 };
 
-export default useTrack;
+export default useIdentify;

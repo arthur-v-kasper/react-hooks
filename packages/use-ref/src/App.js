@@ -40,3 +40,11 @@ function App() {
 }
 
 export default App;
+
+/**
+ * https://frontend-digest.com/6-practical-applications-for-useref-2f5414f4ac68
+ * We can use useRef to persist values for our components lifetime, and update those values, without causing a rerender.
+ * Use cases useRef:
+ * 1. You need to directly access the DOM element
+
+ */

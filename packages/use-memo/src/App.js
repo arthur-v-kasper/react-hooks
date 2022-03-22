@@ -44,6 +44,13 @@ const slowFunction = (number) => {
 
 export default App;
 
+
+/**
+ * Diferenças entre useCallback e useMemo
+ * useCallback: Retorna a função em sí na variavel
+ * useMemo: Retorna o valor da função.
+ */
+
 /**
  * Dois principais casos de uso useMemo
  *

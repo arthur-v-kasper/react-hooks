@@ -1,4 +1,4 @@
-import useTrack from "./helper/Instrumentation";
+import { useTrack } from "./helper/Instrumentalization";
 
 function App() {
   const track = useTrack();
@@ -8,7 +8,16 @@ function App() {
       <header className="App-header">
         <a
           onClick={(e) => {
-            track("Hi Segment, I'm a custom hook");
+            track("Hi Segment, another custom hook", {
+              account_id: 1,
+              distinct_id: "goku@dbz.com",
+              name: "Goku",
+            });
+            track("Hi Segment, another custom hook", {
+              account_id: 2,
+              distinct_id: "saitama@punch.com",
+              name: "Saitama",
+            });
           }}
           className="App-link"
           href="#"
