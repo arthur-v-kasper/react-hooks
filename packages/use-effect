@@ -1,0 +1,27 @@
+
+// Executa toda vez que o componente é renderizado
+useEffect(() => {
+
+})
+
+// Executa quando o componente é montado
+useEffect(() => {
+
+}, [])
+
+
+// Executa quando uma das dependencia é alterada
+// Se a dependencia for "alterada" para o valor atual o useEffect não executa.
+useEffect(() => {
+
+}, [someVariable, outherVariable])
+
+
+// o return serve para fazer algo quando o componente é desmontado, ou seja, se tem alguma função que precisa ser
+// removida ou algo precise ser executado ao desmontar o componente, deve ser colcoar no return do useEffect, funciona como um cleanup
+useEffect(() => {
+
+
+ return () => {
+ }
+}, [])
